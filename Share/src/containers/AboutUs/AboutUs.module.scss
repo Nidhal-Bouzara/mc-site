@@ -1,0 +1,115 @@
+.aboutContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #04294F;
+    padding: 5vw 15vw;
+    overflow: hidden;
+    position: relative;
+}
+/* Chat Display */
+
+// General Settings
+.chat {
+    margin-top: 4vw;
+}
+
+.chatStripe {
+    display: flex;
+    align-items: center;
+}
+
+.userTitle {
+    color: white;
+    font-family: 'Exo';
+    font-weight: 300;
+    font-size: 1.4vw;
+}
+
+.imageContainer {
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+    position: relative;
+    overflow: hidden;
+}
+
+
+// First User
+.firstUser {
+    display: flex;
+    align-items: center;
+}
+
+.firstImageContainer {
+    background-color: white;
+    padding-top: .5rem;
+}
+
+.guestImage {
+    width: 100%;
+}
+
+.firstUserTitle {
+    margin-left: 1vw;
+}
+
+// Second User
+.secondUser {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.secondUserTitle {
+    margin-right: 1vw;
+}
+
+.secondImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00AEE0;
+}
+
+.mcImage {
+    width: 80%;
+}
+
+// Messages
+.messages {
+    font-family: 'Exo';
+    font-size: 1vw;
+    font-weight: 300;
+    color: #04294F;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+.messageLeft {
+    display: block;
+    align-self: flex-start;
+    width: fit-content;
+    border-radius: 3px 20px 20px 20px;
+    background-color: white;
+    padding: .6vw 1.2vw;
+    margin: 1.4vw 0;
+    & > * {
+        margin: 0;
+    }
+}
+
+.messageRight {
+    display: block;
+    align-self: flex-end;
+    width: fit-content;
+    max-width: 60%;
+    background-color: #00AEE0;
+    color: white;
+    border-radius: 20px 3px 20px 20px;
+    padding: .6vw 1.2vw;
+    & > * {
+        margin: 0;
+    }
+}

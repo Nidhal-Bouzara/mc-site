@@ -1,0 +1,45 @@
+.cardContainer {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageContainer {
+    width: 8vw;
+    height: 8vw;
+    background-color: #04294F;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: 150%;
+        height: 5px;
+        background-color: #F04E23;
+        position: absolute;
+        transform: rotateZ(45deg);
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 150%;
+        height: 5px;
+        background-color: #F04E23;
+        position: absolute;
+        transform: rotateZ(-45deg);
+    }
+    
+}
+
+.sponsorTitle {
+    font-family: 'Dosis';
+    font-size: 1.5vw;
+    color: #04294F;
+    font-weight: 500;
+    margin: .5rem   ;
+}

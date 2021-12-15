@@ -1,0 +1,116 @@
+.cardContainer {
+    padding: 1.4vw 1vw 4vw;
+    background-color: white;
+    width: 17vw;
+    display: flex;
+    flex-direction: column;
+    align-items: cneter;
+    position: relative;
+    box-shadow: 3px 3px 6px #00000040;
+}
+
+.cardImage {
+    max-width: 15vw;
+    max-height: 15vw;
+    object-fit: contain;
+}
+
+.cardContent {
+    margin-top: 2vw;
+    height: 100%;
+    width: 100%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Dosis';
+    font-size: 1.5vw;
+    color: #04294F;
+    margin: 0;
+    font-weight: 600;
+}
+
+.description {
+    text-align: center;
+    font-family: 'Exo';
+    font-size: 0.9vw;
+    font-weight: 400;
+    color: #04294F;
+    margin: .8vw 0 0;
+}
+
+.readMore {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0 1.4vw 1vw 0;
+
+    &::before {
+        content: '';
+        display: block;
+        height: 4vw;
+        width: 8.6vw;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-image: url(./cardDec-min.png);
+        background-size: cover;
+        pointer-events: none;
+    }
+}
+
+.readMoreButton {
+    background-color: transparent;
+    border: none;
+    font-family: 'Exo';
+    font-size: .8vw;
+    color: #04294F;
+    padding: .4vw .7vw;
+    transition: all .2s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    &:hover {
+        color: #00AEE0;
+        & > .buttonDecoration {
+            background-color: #00AEE0;
+            &::before {
+                border-top-color: #00AEE0;
+                border-right-color: #00AEE0;
+            }
+        }
+    }
+}
+
+.buttonDecoration {
+    margin-left: .3vw;
+    height: 1px;
+    width: 1.5vw;
+    display: block;
+    background-color: #04294F;
+    transition: all .2s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &::before {
+        content: '';
+        display: block;
+        height: .5vw;
+        width: .5vw;
+        transform: rotateZ(45deg);
+        border-top: 1px solid #04294F;
+        border-right: 1px solid #04294F;
+        transition: all;
+        &:hover {
+            border-top-color: #00AEE0;
+            border-right-color: #00AEE0;
+        }
+    }
+}

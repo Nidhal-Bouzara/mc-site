@@ -1,0 +1,48 @@
+.structureSection {
+    padding: 5vw 15vw;
+}
+
+.diagramContainer {
+    display: grid;
+    grid-template-columns: 1fr 4px 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    justify-items: center;
+    grid-template-areas:
+        "itemA line null"
+        "itemA line null"
+        "itemA line itemB"
+        "nullB line itemB"
+        "itemC line itemB"
+        "itemC line nullC"
+        "itemC line itemD"
+        "nullD line itemD"
+        "nullD line itemD"
+    ;
+    position: relative;
+    margin: 5vw 0;
+}
+
+.itemA {
+    grid-area: itemA;
+}
+
+.itemB {
+    grid-area: itemB;
+}
+
+.itemC {
+    grid-area: itemC;
+}
+
+.itemD {
+    grid-area: itemD;
+}
+
+.line {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #04294F;
+    grid-area: line;
+    border-radius: 20px;
+}

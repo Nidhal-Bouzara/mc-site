@@ -1,0 +1,139 @@
+.socialContainer {
+    background-color: #00AEE0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialTitle {
+    font-family: 'Exo';
+    font-size: 1.5vw;
+    color: white;
+    font-weight: 200;
+    margin: 1.4vw 0;
+}
+
+.socialLinks {
+    list-style: none;
+    margin: 0 0 1.4vw;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.socialIcon {
+    width: 2vw;
+    height: 2vw;
+}
+
+// Linking
+.linking {
+    padding: 2vw 15vw;
+    background-color: #04294F;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "mcInfo mcLinks empty mcRegistration";
+}
+
+// mcFooter
+.mcInfo {
+    grid-area: mcInfo;
+    align-self: flex-start;
+    width: fit-content;
+
+    & > a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+}
+
+.mcInfoLogo {
+    width: 4.5vw;
+}
+
+.mcInfoTitle {
+    font-family: 'Exo';
+    font-size: 1.4vw;
+    color: white;
+    font-weight: 200;
+    margin: 0 1vw;
+    text-decoration: none;
+}
+
+// mcLinks
+.mcLinks {
+    grid-area: mcLinks;
+
+    & > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & > li {
+            margin: 1vw 0;
+
+            &:nth-of-type(1) {
+                margin-top: 0;
+            }
+
+            & > a {
+                color: white;
+                font-family: 'Exo';
+                font-size: 1vw;
+                font-weight: 200;
+                text-decoration: none;
+                transition: all .2s ease;
+
+                &:hover {
+                    color: #00AEE0;
+                }
+            }
+        }
+    }
+}
+
+// mcRegistration
+.mcRegistration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Exo';
+    grid-area: mcRegistration;
+    justify-self: flex-end;
+}
+
+.button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Exo';
+    font-weight: 200;
+    font-size: 1vw;
+    padding: .4vw .7vw;
+    transition: all .2s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: white;
+        color: #04294F;
+    }
+}
+
+.secondLine {
+margin-top: .2vw;
+color: white;
+font-weight: 200;
+font-size: .7vw;
+}
+
+.link {
+    color: #00AEE0;
+    text-decoration: none;
+    transition: all .2s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

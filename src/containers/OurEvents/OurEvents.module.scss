@@ -1,0 +1,20 @@
+.eventsContainer {
+    background-color: #04294F;
+    padding: 6vw 15vw 5vw;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: cneter;
+}
+
+.cardsContainer {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.moonDec {
+    position: absolute;
+    width: 20%;
+}

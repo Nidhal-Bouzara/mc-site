@@ -1,0 +1,54 @@
+.diagramItem {
+    width: 100%;
+    position: relative;
+    justify-self: flex-end;
+
+    &:nth-child(2n+1) {
+        padding-right: 7vw;
+        justify-content: flex-start;
+
+        & > .decoration {
+            right: 0;
+        }
+    }
+    &:nth-child(2n) {
+        padding-left: 7vw;
+
+        & > .decoration {
+            left: 0;
+            justify-content: flex-end;
+        }
+    }
+}
+
+.diagramTitle {
+    font-family: 'Exo';
+    color: #04294F;
+    font-weight: 400;
+    font-size: 1.3vw;
+}
+
+.diagramDescription {
+    font-family: 'Exo';
+    color: black;
+    font-size: 1vw;
+}
+
+.decoration {
+    display: flex;
+    align-items: center;
+    height: 4px;
+    width: 5vw;
+    background-color: #04294F;
+    position: absolute;
+    top: 50%;
+    &::before {
+        content: '';
+        display: block;
+        height: 5vw;
+        width: 4px;
+        background-color: #04294F;
+        position: relative;
+        border-radius: 20px;
+    }
+}

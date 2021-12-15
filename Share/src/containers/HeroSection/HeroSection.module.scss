@@ -1,0 +1,110 @@
+.heroContainer {
+    min-height: 100vh;
+    padding: 5vw 15vw;  
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    width: 45%;
+}
+
+.headline {
+    font-family: 'Dosis';
+    font-size: 2.4vw;
+    color: #04294F;
+}
+
+.description {
+    font-family: 'Exo';
+    font-size: 1.4vw;
+    color: #00C6BD;
+    font-weight: 200;
+}
+
+.buttonsContainer {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 4vw;
+}
+
+.buttonMain {
+    border: 3px solid #04294f;
+    background-color: #04294f;
+    padding: .4vw 1.2vw;
+    font-family: 'Exo';
+    color: white;
+    font-weight: 500;
+    font-size: 1.4vw;
+    cursor: pointer;
+    margin-right: 3vw;
+}
+
+.buttonSecondary {
+    border: 3px solid #04294F;
+    background-color: transparent;
+    font-family: 'Exo';
+    padding: .4vw 1vw;
+    color: #04294F;
+    font-weight: 600;
+    font-size: 1.4vw;
+    cursor: pointer;
+}
+
+.scrollContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 40%;
+    top: 140%;
+}
+
+.scrollIndicator {
+    height: 2.3vw;
+    width: 1.5vw;
+    border: .3vw solid #04294F;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    &::after {
+        content: '';
+        display: block;
+        width: .3vw;
+        height: .8vw;
+        border-radius: 50px;
+        background-color: #04294F;
+        animation: bobb 3s ease infinite;
+    }
+}
+
+@keyframes bobb {
+    0% {
+        transform: translateY(0);
+    }
+
+    35% {
+        transform: translateY(-.4vw);
+    }
+
+    70% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.scrollText {
+    margin-top: .5vw;
+    font-family: 'Exo';
+    font-size: 1vw;
+    color: #04294F;
+}
